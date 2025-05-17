@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black" style="background: linear-gradient(to right, #000000, #222222);scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Murhekar | Portfolio</title>
+    <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon">
+
+    <!----------------TailwindCSS---------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!----------------Daisy Ui--------------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="themes.css" rel="stylesheet" type="text/css" />
+
+    <!----------------Font Awesome---------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kameron:wght@400..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kameron:wght@400..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!----------------AOS Animations---------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body style="padding: 40px 5% 0px 5%; font-family: Montserrat;overflow-x:hidden">
+    <!-----------Initialize AOS----------->
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+    <!-----------Back to top----------->
+    <a style="color: #000000; position: fixed; bottom: 40px; right:40px;" href="#top" class="btn btn-ghost btn-circle bg-zinc-300 text-2xl z-50">↑</a>
+
+    <!-----------------Navbar----------------->
+    <div id="top" class="navbar flex flex-row justify-between" data-aos="fade-down">
+        <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-300 rounded-lg z-1 mt-3 w-52 p-2 shadow"
+                data-aos="fade-right"
+                data-aos-delay="100">
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">My Journey</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+      <!-----------------Main Content----------------->
+      <div class="flex flex-col items-center justify-center">
+        <div class="pt-42" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="text-center text-sm md:text-md lg:text-lg">Hello I'm</h4>
+        </div>
+        <div class="pt-4" data-aos="zoom-in" data-aos-delay="200">
+            <h1 style="font-family: Krona One;" class="text-center gradient-text text-4xl md:text-8xl lg:text-9xl">SAHIL<br>MURHEKAR</h1>
+        </div>
+        <div class="pt-4 w-82 md:w-120" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="text-center text-sm md:text-md lg:text-lg">From insightful data analytics and cutting-edge machine learning to creative design, full-stack web development, IoT innovation, and impactful digital marketing — I craft intelligent solutions that connect technology, creativity, and strategy.</h4>
+        </div>
+        <div class="py-32" data-aos="bounce" data-aos-delay="400">
+            <a href="#about"><img style="transition: 300ms;" class="floating-icon cursor-pointer hover:opacity-60" src="/assets/down.png" alt=""></a>
+        </div>
+      </div>
+
+      <!-----------------ABOUT----------------->
+      <div id="about" class="flex flex-col pt-32" data-aos="fade-up">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <h1 style="font-family: Krona One;" class="text-4xl text-center gradient-text md:text-5xl">ABOUT</h1>
+        </div>
+        <div class="flex flex-col pt-28 justify-center items-center lg:flex-row lg:gap-24">
+          <img class="rounded-4xl w-64 md:w-96" src="/assets/hero.jpg" alt="" data-aos="fade-right" data-aos-delay="200">
+          <div>
+            <h3 style="font-family: Montserrat;" class="text-center pt-18 w-86 md:w-120 lg:text-left lg:text-xl lg:pt-0" data-aos="fade-left" data-aos-delay="300">I’m a versatile tech creator fusing Data Science, Machine Learning, IoT, and Programming with Web Development, Design, and Digital Marketing to build smart, impactful, and visually stunning solutions. From intelligent analytics to innovative interfaces, I turn ideas into reality at the intersection of data, design, and code.</h3>
+            <div class="flex flex-col pt-18 justify-center items-center gap-8 md:flex-row lg:justify-start">
+              <div data-aos="fade-up" data-aos-delay="400">
+                <h4 class="text-center text-sm">Projects Reviewed</h4>
+                <h1 class="text-center text-4xl font-bold pt-2">120+</h1>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="500">
+                <h4 class="text-center text-sm">Students Mentored</h4>
+                <h1 class="text-center text-4xl font-bold pt-2">250+</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center pt-28 gap-4 flex-col md:flex-row">
+          <a href="#contact" class="sexybutton" data-aos="fade-up" data-aos-delay="600">Hire Me !</a>
+          <a href="https://docs.google.com/document/d/13ToGWcVPXMT84GA6Dmw-gf_ZbCDDcgjGlWjgPQmovh0/edit?tab=t.0" class="sexybutton" data-aos="fade-up" data-aos-delay="700">Resume Download ↓</a>
+        </div>
+      </div>
+
+      <!------------------Journey---------------------->
+      <div id="journey" class="pt-48" data-aos="fade-up">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <h1 style="font-family: Krona One;" class="text-4xl text-center gradient-text md:text-5xl">MY JOURNEY</h1>
+        </div>
+
+        <div class="pt-36">
+          <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <li data-aos="fade-right" data-aos-delay="200">
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-start mb-10 md:text-end">
+                <time class="font-mono italic">Sep 2022 - May 2026</time>
+                <div class="text-lg font-black">Bachelors in Information Technology</div>
+                <h1 style="filter: opacity(0.7);" class="text-sm italic">Vellore Institute of Technology, Vellore</h1>
+                <h4 class="text-sm pt-4">
+                  Completed advanced coursework in core CS subjects, including DSA, DBMS, OS, CN, and InfoSec. Selected for a competitive research program on machine learning applications. Served as Tech-Operations Lead and Vice-Chairman of TAM-VIT, organizing 30+ AI/ML workshops for 100+ participants.
+                </h4>
+              </div>
+              <hr />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="300">
+              <hr />
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end md:mb-10">
+                <time class="font-mono italic">Aug 2023 - Sep 2023</time>
+                <div class="text-lg font-black">Data Analytics Intern</div>
+                <h1 style="filter: opacity(0.7);" class="text-sm italic">Wissenaire, IIT Bhubaneshwar</h1>
+                <h4 class="text-sm pt-4">
+                  Finished comprehensive Machine Learning training, covering Exploratory Data Analysis (EDA), Supervised and Unsupervised Learning techniques, Deep Learning, and Natural Language Processing (NLP). Applied this knowledge to an industry project, implementing advanced models like LightGBM and XGBoost for optimal performance.
+                </h4>
+              </div>
+              <hr />
+            </li>
+            <li data-aos="fade-right" data-aos-delay="400">
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-start mb-10 md:text-end">
+                <time class="font-mono italic">Jun 2024 - July 2024</time>
+                <div class="text-lg font-black">Web Developer Intern</div>
+                <h1 style="filter: opacity(0.7);" class="text-sm italic">24buy7, Mumbai</h1>
+                <h4 class="text-sm pt-4">
+                  Developed full-stack applications using Figma, Framer, HTML, CSS, and JavaScript, reducing development time by 30%. Improved cross-platform compatibility, boosting mobile user engagement by 40%. Built an automated contact system that increased customer inquiry conversions by 40%.
+                </h4>
+              </div>
+              <hr />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="500">
+              <hr />
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end md:mb-10">
+                <time class="font-mono italic">Jul 2024 - Dec 2024</time>
+                <div class="text-lg font-black">Deep Learning Intern</div>
+                <h1 style="filter: opacity(0.7);" class="text-sm italic">Prezitec Health Pvt. Ltd. AIIMS New Delhi</h1>
+                <h4 class="text-sm pt-4">
+                  Engineered a deep learning image processing pipeline across 3 projects, enhancing customer segmentation and campaign impact. Designed a user interface for SONAR injection systems, cutting staff training needs by 40% and boosting efficiency. Improved product performance by increasing needle precision by 30% and accuracy by 25%. Restructured quality control protocols, reducing manufacturing defects by 50% and elevating product reliability.
+                </h4>
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center pt-28 gap-4 flex-col md:flex-row">
+          <a href="#contact" class="sexybutton" data-aos="fade-up" data-aos-delay="600">Hire Me !</a>
+          <a href="https://docs.google.com/document/d/13ToGWcVPXMT84GA6Dmw-gf_ZbCDDcgjGlWjgPQmovh0/edit?tab=t.0" class="sexybutton" data-aos="fade-up" data-aos-delay="700">Resume Download ↓</a>
+        </div>
+      </div>
+
+      <!-----------------Skills----------------->
+      <div id="skills" class="pt-48 px-[10%]" data-aos="fade-up">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <h1 style="font-family: Krona One;" class="text-4xl text-center gradient-text md:text-5xl">SKILLS</h1>
+        </div>
+
+        <div class="flex flex-col pt-24 gap-32">
+          <div class="flex flex-col gap-8 justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex justify-center items-center text-2xl font-black gradient-text">PROGRAMMING</div>
+            <div class="flex flex-wrap gap-8 justify-center items-center">
+              <img class="h-20" src="/assets/python.png" alt="" data-aos="zoom-in" data-aos-delay="300">
+              <img class="h-20" src="/assets/cpp.png" alt="" data-aos="zoom-in" data-aos-delay="350">
+              <img class="h-20" src="/assets/java.png" alt="" data-aos="zoom-in" data-aos-delay="400">
+              <img class="h-20" src="/assets/c.png" alt="" data-aos="zoom-in" data-aos-delay="450">
+              <img class="h-20" src="/assets/sql.png" alt="" data-aos="zoom-in" data-aos-delay="500">
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-8 justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex justify-center items-center text-2xl font-black gradient-text">BIG DATA TOOLS</div>
+            <div class="flex flex-wrap gap-8 justify-center items-center">
+              <img class="h-20" src="/assets/hadoop.png" alt="" data-aos="zoom-in" data-aos-delay="300">
+              <img class="h-20" src="/assets/hive.png" alt="" data-aos="zoom-in" data-aos-delay="350">
+              <img class="h-20" src="/assets/hbase.png" alt="" data-aos="zoom-in" data-aos-delay="400">
+              <img class="h-20" src="/assets/mongodb.png" alt="" data-aos="zoom-in" data-aos-delay="450">
+              <img style="filter:invert();" class="h-20" src="/assets/cassandra.png" alt="" data-aos="zoom-in" data-aos-delay="500">
+              <img style="filter:invert();" class="h-20" src="/assets/spark.png" alt="" data-aos="zoom-in" data-aos-delay="550">
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-8 justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex justify-center items-center text-2xl font-black gradient-text">WEB DEVELOPMENT</div>
+            <div class="flex flex-wrap gap-8 justify-center items-center">
+              <img class="h-20" src="/assets/figma.png" alt="" data-aos="zoom-in" data-aos-delay="300">
+              <img class="h-20" src="/assets/framer.png" alt="" data-aos="zoom-in" data-aos-delay="320">
+              <img class="h-20" src="/assets/html.png" alt="" data-aos="zoom-in" data-aos-delay="340">
+              <img class="h-20" src="/assets/css.png" alt="" data-aos="zoom-in" data-aos-delay="360">
+              <img class="h-20" src="/assets/tailwind.png" alt="" data-aos="zoom-in" data-aos-delay="380">
+              <img class="h-20" src="/assets/js.png" alt="" data-aos="zoom-in" data-aos-delay="400">
+              <img class="h-20" src="/assets/astro.png" alt="" data-aos="zoom-in" data-aos-delay="420">
+              <img class="h-20" src="/assets/logo.svg" alt="" data-aos="zoom-in" data-aos-delay="440">
+              <img class="h-20" src="/assets/react.png" alt="" data-aos="zoom-in" data-aos-delay="460">
+              <img class="h-20" src="/assets/nodejs.png" alt="" data-aos="zoom-in" data-aos-delay="480">
+              <img class="h-20" src="/assets/expressjs.png" alt="" data-aos="zoom-in" data-aos-delay="500">
+              <img class="h-20" src="/assets/flask.png" alt="" data-aos="zoom-in" data-aos-delay="520">
+              <img class="h-20" src="/assets/django.png" alt="" data-aos="zoom-in" data-aos-delay="540">
+              <img class="h-20" src="/assets/jwt.png" alt="" data-aos="zoom-in" data-aos-delay="560">
+              <img class="h-20" src="/assets/socketio.png" alt="" data-aos="zoom-in" data-aos-delay="580">
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-8 justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex justify-center items-center text-2xl font-black gradient-text">DATA SCIENCE</div>
+            <div class="flex flex-wrap gap-8 justify-center items-center">
+              <img class="h-20" src="/assets/opencv.png" alt="" data-aos="zoom-in" data-aos-delay="300">
+              <img class="h-20" src="/assets/matplotlib.png" alt="" data-aos="zoom-in" data-aos-delay="320">
+              <img class="h-20" src="/assets/pandas.png" alt="" data-aos="zoom-in" data-aos-delay="340">
+              <img class="h-20" src="/assets/numpy.png" alt="" data-aos="zoom-in" data-aos-delay="360">
+              <img class="h-20" src="/assets/scikitlearn.png" alt="" data-aos="zoom-in" data-aos-delay="380">
+              <img class="h-20" src="/assets/pytorch.png" alt="" data-aos="zoom-in" data-aos-delay="400">
+              <img class="h-20" src="/assets/tensorflow.png" alt="" data-aos="zoom-in" data-aos-delay="420">
+              <img class="h-20 rounded-lg" src="/assets/powerbi.png" alt="" data-aos="zoom-in" data-aos-delay="440">
+              <img style="filter:invert();" class="h-20" src="/assets/llms.png" alt="" data-aos="zoom-in" data-aos-delay="460">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-----------------Projects----------------->
+      <div id="projects" class="pt-48" data-aos="fade-up">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <h1 style="font-family: Krona One;" class="text-4xl text-center gradient-text md:text-5xl">PROJECTS</h1>
+        </div>
+
+        <div class="flex gap-16 flex-wrap justify-center pt-28">
+          <div class="card bg-base-300 w-96 shadow-sm rounded-2xl p-5" data-aos="fade-up" data-aos-delay="200">
+            <figure>
+              <img
+                src="/assets/hirecrest.png"
+                alt="Project" />
+            </figure>
+            <div class="card-body items-center md:items-start">
+              <h2 class="card-title">HireCrest AI</h2>
+              <p class="text-center md:text-left">Intelligent Job Recruitment System Leveraging Machine Learning for Candidate Compatibility and Automated Assessments</p>
+              <div class="card-actions justify-center md:justify-start">
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://github.com/sahilmurhekar/HireCrest">Github</a>
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://hirecrest.up.railway.app">Live site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-300 w-96 shadow-sm rounded-2xl p-5" data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img
+                src="/assets/visiblevoice.png"
+                alt="Project" />
+            </figure>
+            <div class="card-body items-center md:items-start">
+              <h2 class="card-title">VisibleVoice AI</h2>
+              <p class="text-center md:text-left">AI-Driven System Converting Sign Gestures into Natural Language Text and Voice to Bridge Communication Gaps</p>
+              <div class="card-actions justify-center md:justify-start">
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://github.com/sahilmurhekar/visiblevoiceAI">Github</a>
+                <a class="btn btn-primary rounded-lg btn-disabled" target="_blank">Live site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-300 w-96 shadow-sm rounded-2xl p-5" data-aos="fade-up" data-aos-delay="400">
+            <figure>
+              <img
+                src="/assets/plingchat.png"
+                alt="Project" />
+            </figure>
+            <div class="card-body items-center md:items-start">
+              <h2 class="card-title">PlingChat</h2>
+              <p class="text-center md:text-left">Full-Stack Messaging Application Enabling Seamless, Secure, and Instant Communication</p>
+              <div class="card-actions justify-center md:justify-start">
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://github.com/sahilmurhekar/PlingChat">Github</a>
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://plingchat.onrender.com">Live site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-300 w-96 shadow-sm rounded-2xl p-5" data-aos="fade-up" data-aos-delay="200">
+            <figure>
+              <img
+                src="/assets/interviewprep.png"
+                alt="Project" />
+            </figure>
+            <div class="card-body items-center md:items-start">
+              <h2 class="card-title">InterviewPrep AI</h2>
+              <p class="text-center md:text-left">End-to-End Interview Readiness Platform Featuring Custom Question Banks and AI Evaluations</p>
+              <div class="card-actions justify-center md:justify-start">
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://github.com/sahilmurhekar/InterviewPrepAI">Github</a>
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://prep-ai.streamlit.app/">Live site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-300 w-96 shadow-sm rounded-2xl p-5" data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img
+                src="/assets/preprocessai.png"
+                alt="Project" />
+            </figure>
+            <div class="card-body items-center md:items-start">
+              <h2 class="card-title">PreProcessor AI</h2>
+              <p class="text-center md:text-left">Interactive Web Tool for Seamless Dataset Preparation, Visualization, and Predictive Enhancements</p>
+              <div class="card-actions  justify-center md:justify-start">
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://github.com/sahilmurhekar/ProcessAI">Github</a>
+                <a class="btn btn-primary rounded-lg" target="_blank" href="https://preprocessai.streamlit.app/">Live site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-300 w-96 shadow-sm rounded-2xl p-5" data-aos="fade-up" data-aos-delay="400">
+            <figure>
+              <img
+                src="/assets/skincare.png"
+                alt="Project" />
+            </figure>
+            <div class="card-body items-center md:items-start">
+              <h2 class="card-title">Skincare AI</h2>
+              <p class="text-center md:text-left">Deep Learning-Driven Dermatology Tool for Automated Detection and Classification of Skin Conditions</p>
+              <div class="card-actions justify-center md:justify-start">
+                <a class="btn btn-primary rounded-lg" href="https://github.com/sahilmurhekar/skincareAI" target="_blank">Github</a>
+                <a class="btn btn-primary rounded-lg btn-disabled" target="_blank">Live site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-----------------Highlights----------------->
+      <div id="highlights" class="pt-48" data-aos="fade-up">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <h1 style="font-family: Krona One;" class="text-4xl text-center gradient-text md:text-5xl">HIGHLIGHTS</h1>
+        </div>
+        <div class="flex flex-col gap-4 pt-28 px-[10%]">
+          <div class="collapse collapse-arrow rounded-xl" data-aos="fade-up" data-aos-delay="200">
+            <input type="checkbox" name="my-accordion-2" />
+            <div class="collapse-title font-black text-xl">📄 Research Paper Published</div>
+            <div class="collapse-content text-sm flex flex-col gap-4">Published a research paper proposing an AI-based system to forecast power demand for IoT and machine devices. The model enhances energy efficiency by enabling smart, real-time load management, contributing to sustainable and intelligent infrastructure design.
+              <br><a target="_blank" href="https://www.researchgate.net/publication/390426970_Optimizing_Power_Supply_with_AI-Predicted_Demand_for_IoT_and_Machine_Devices" class="btn btn-primary rounded-lg w-30">Link</a>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow rounded-xl" data-aos="fade-up" data-aos-delay="300">
+            <input type="checkbox" name="my-accordion-2"/>
+            <div class="collapse-title font-black text-xl">🛠️ TechOps Lead & Ex-Vice Chairman at TAM-VIT</div>
+            <div class="collapse-content text-sm">Led the Technical Operations division at TAM-VIT, steering the team through numerous national-level events and technological initiatives. As Ex-Vice Chairman, I facilitated strategic growth, fostered interdisciplinary collaboration, and championed AI & ML literacy among students. My tenure was marked by a blend of technical leadership and community building.
+            </div>
+          </div>
+          <div class="collapse collapse-arrow rounded-xl" data-aos="fade-up" data-aos-delay="400">
+            <input type="checkbox" name="my-accordion-2" />
+            <div class="collapse-title font-black text-xl">🧠 NASBA Certified SQL Developer</div>
+            <div class="collapse-content text-sm flex flex-col gap-4">Earned certification from NASBA, demonstrating mastery in Structured Query Language (SQL) and data manipulation. This credential reflects deep analytical expertise, enabling efficient data extraction, transformation, and insight generation in compliance with global data standards and best practices.
+              <br><a target="_blank" href="https://www.linkedin.com/learning/certificates/a20272087f7ad86aed137a46c16b42aa3576a3ef15cdb5a81bd3820b63f6dca9" class="btn btn-primary rounded-lg w-30">Link</a>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow rounded-xl" data-aos="fade-up" data-aos-delay="500">
+            <input type="checkbox" name="my-accordion-2" />
+            <div class="collapse-title font-black text-xl">🏁 Finalist – Caterpillar Code-a-thon 20244</div>
+            <div class="collapse-content text-sm">Distinguished as a national finalist in the prestigious Caterpillar Code-a-thon 2024. Designed and presented a robust solution to an industrial challenge using AI-driven insights, exhibiting both technical acumen and an innovative spirit tailored for impact in real-world scenarios.</div>
+          </div>
+          <div class="collapse collapse-arrow rounded-xl" data-aos="fade-up" data-aos-delay="600">
+            <input type="checkbox" name="my-accordion-2" />
+            <div class="collapse-title font-black text-xl">🎓 Mentored 250+ Students</div>
+            <div class="collapse-content text-sm">Guided over 250 students in their academic and professional journeys through mentorship programs, workshops, and one-on-one sessions. My focus remains on demystifying AI, machine learning, and full-stack development while nurturing a culture of curiosity, discipline, and resilience.</div>
+          </div>
+          <div class="collapse collapse-arrow rounded-xl" data-aos="fade-up" data-aos-delay="700">
+            <input type="checkbox" name="my-accordion-2" />
+            <div class="collapse-title font-black text-xl">📚 Facilitated Learning through 20+ Workshops</div>
+            <div class="collapse-content text-sm">Orchestrated and delivered 20+ interactive workshops on topics spanning AI, machine learning, data analytics, and emerging technologies. Each session was crafted to inspire, inform, and empower participants to confidently navigate complex technical landscapes.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-----------------Contact----------------->
+      <div id="contact" class="py-48" data-aos="fade-up">
+        <div data-aos="zoom-in" data-aos-delay="100">
+            <h1 style="font-family: Krona One;" class="text-4xl text-center gradient-text md:text-5xl">CONTACT</h1>
+        </div>
+        <div class="flex flex-col justify-center items-center pt-18 lg:flex-row lg:justify-start lg:px-92">
+            <div>
+                <h1 class="gradient-text font-black text-center text-2xl lg:text-4xl lg:text-left" data-aos="fade-right" data-aos-delay="200">GET IN TOUCH</h1>
+                <h3 class="text-sm text-center pt-8 lg:text-left" data-aos="fade-right" data-aos-delay="300">I'm always open to connecting, whether it's for a potential collaboration, an exciting opportunity, or just a good conversation about tech and innovation.</h3>
+                <div class="flex justify-center pt-8 gap-4 lg:justify-start">
+                    <a href="https://www.instagram.com/sahilmurhekar" target="_blank" class="btn btn-ghost btn-circle bg-zinc-300 h-8 w-8" data-aos="zoom-in" data-aos-delay="400">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 30 30">
+                            <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.github.com/sahilmurhekar" target="_blank" class="btn btn-ghost btn-circle bg-zinc-300 h-8 w-8" data-aos="zoom-in" data-aos-delay="450">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 50 50">
+                            <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.kaggle.com/sahilmurhekar" target="_blank" class="btn btn-ghost btn-circle bg-zinc-300 h-8 w-8" data-aos="zoom-in" data-aos-delay="500">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 32 32">
+                            <path d="M 10.351562 4 C 10.117563 4 10 4.1165625 10 4.3515625 L 10 27.644531 C 10 27.878531 10.116563 27.996094 10.351562 27.996094 L 12.648438 27.996094 C 12.882437 27.996094 13.001953 27.879531 13.001953 27.644531 L 13.001953 22.808594 L 14.810547 21.085938 L 20.048828 27.75 C 20.190828 27.915 20.354922 28 20.544922 28 L 23.716797 28 C 23.882797 28 23.977 27.952422 24 27.857422 L 23.933594 27.498047 L 17.023438 18.910156 L 23.650391 12.498047 C 23.773391 12.370047 23.730438 12 23.398438 12 L 20.117188 12 C 19.951187 12 19.785141 12.085953 19.619141 12.251953 L 13 18.974609 L 13 4.3515625 C 13 4.1165625 12.883437 4 12.648438 4 L 10.351562 4 z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sahil-murhekar" target="_blank" class="btn btn-ghost btn-circle bg-zinc-300 h-8 w-8" data-aos="zoom-in" data-aos-delay="550">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 30 30">
+                            <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center pt-16">
+                <!-- Add a div to display success/error messages -->
+                <div id="form-message" class="mb-4 text-center text-sm" style="display: none;"></div>
+                <form id="contact-form" class="flex flex-col justify-center items-center gap-4 w-120" data-aos="fade-left" data-aos-delay="200">
+                    <input id="full_name" style="background-color: #ffffff15; border: none;" type="text" placeholder="Full Name" class="input rounded-lg text-sm" data-aos="fade-left" data-aos-delay="300" />
+                    <input id="email" style="background-color: #ffffff15; border: none;" type="text" placeholder="Email" class="input rounded-lg text-sm" data-aos="fade-left" data-aos-delay="350" />
+                    <input id="subject" style="background-color: #ffffff15; border: none;" type="text" placeholder="Subject" class="input rounded-lg text-sm" data-aos="fade-left" data-aos-delay="400" />
+                    <textarea id="message" style="background-color: #ffffff15; border: none;" class="textarea rounded-lg text-sm" placeholder="Message" data-aos="fade-left" data-aos-delay="450"></textarea>
+                    <button style="height: 35px; width: 200px;" class="sexybutton text-sm" type="submit" data-aos="fade-left" data-aos-delay="500">Send →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add JavaScript at the end of the body -->
+    <script>
+        // Initialize EmailJS with your User ID
+        (function() {
+            emailjs.init("OpyKRxZNZHW8puXM0"); // Replace with your EmailJS User ID (e.g., user_123456789)
+        })();
+    
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            const fullName = document.getElementById('full_name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const messageDiv = document.getElementById('form-message');
+    
+            // Validate form data
+            if (!fullName || !email || !subject || !message) {
+                messageDiv.style.display = 'block';
+                messageDiv.style.color = '#ff4444';
+                messageDiv.textContent = 'All fields are required!';
+                return;
+            }
+    
+            // Prepare data for EmailJS
+            const templateParams = {
+                full_name: fullName,
+                email: email,
+                subject: subject,
+                message: message,
+                timestamp: new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }) // IST timestamp
+            };
+    
+            // Send email using EmailJS
+            emailjs.send('service_rl1he4m', 'template_5l7q0fg', templateParams)
+                .then(function(response) {
+                    messageDiv.style.display = 'block';
+                    messageDiv.style.color = '#00cc00';
+                    messageDiv.textContent = 'Message sent successfully!';
+                    document.getElementById('contact-form').reset(); // Clear the form
+                }, function(error) {
+                    messageDiv.style.display = 'block';
+                    messageDiv.style.color = '#ff4444';
+                    messageDiv.textContent = 'Failed to send message: ' + error.text;
+                });
+        });
+    </script>
+</body>
+</html>
