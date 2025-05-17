@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="black" style="background: linear-gradient(to right, #000000, #222222);scroll-behavior: smooth;">
+<html lang="en" data-theme="black" style="background: linear-gradient(to right, #000000, #222222);scroll-behavior: smooth; overflow-x: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,14 +45,6 @@
     }
     </script>
 
-
-
-
-
-
-
-
-
     <!----------------TailwindCSS---------------->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -73,7 +65,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-<body style="padding: 40px 5% 0px 5%; font-family: Montserrat;overflow-x:hidden">
+<body style="padding: 40px 5% 0px 5%; font-family: Montserrat;">
     <!-----------Initialize AOS----------->
     <script>
         AOS.init({
@@ -84,7 +76,7 @@
     </script>
 
     <!-----------------Navbar----------------->
-    <div id="top" class="navbar flex flex-row justify-between" data-aos="fade-down">
+    <div id="top" class="navbar flex flex-row justify-between fixed" data-aos="fade-down">
         <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-zinc-300">
