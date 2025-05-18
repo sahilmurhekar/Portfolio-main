@@ -20,7 +20,7 @@ const About = () => {
       <div className="flex flex-col pt-28 justify-center items-center lg:flex-row lg:gap-24">
         <img
           className={`rounded-4xl w-64 md:w-96 animate__animated ${inView ? 'animate__fadeInRight' : ''} animate__delay-700ms`}
-          src="/src/assets/hero.jpg"
+          src="./assets/hero.jpg"
           alt=""
         />
         <div>
