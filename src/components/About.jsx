@@ -48,7 +48,7 @@ const About = () => {
       </div>
       <div className="flex justify-center items-center pt-28 gap-4 flex-col md:flex-row">
         <a
-          href="#"
+          href="#contact"
           className={`sexybutton animate__animated ${inView ? 'animate__fadeInUp' : ''} animate__delay-1500ms`}
         >
           Hire Me !

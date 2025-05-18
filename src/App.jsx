@@ -22,6 +22,8 @@ function App() {
       <Projects />
       <Highlights />
       <Contact/>
+
+      <a href="#top" className='btn btn btn-ghost btn-circle bg-zinc-300 fixed bottom-10 right-10 z-50 text-2xl text-black floating-icon'> ↑ </a>
     </>
   )
 }

@@ -27,7 +27,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center overflow-hidden pt-36">
+    <div id='top' className="flex flex-col items-center justify-center overflow-hidden pt-36">
       <div ref={titleRef} className={`pt-42 ${titleInView ? 'animate__animated animate__fadeIn animate__delay-0s' : 'opacity-0'}`}>
         <h4 className="text-center text-sm md:text-md lg:text-lg">Hello I'm</h4>
       </div>
@@ -42,11 +42,11 @@ const Hero = () => {
         </h4>
       </div>
       <div ref={iconRef} className={`py-32 ${iconInView ? 'animate__animated animate__bounce animate__delay-0s' : 'opacity-0'}`}>
-        <a href="#">
+        <a href="#about">
           <img
             style={{ transition: '300ms' }}
             className="floating-icon cursor-pointer hover:opacity-60"
-            src="/src/assets/down.png"
+            src="/assets/down.png"
             alt=""
           />
         </a>
