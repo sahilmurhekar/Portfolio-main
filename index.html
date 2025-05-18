@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="black" style="scroll-behavior: smooth;">
+<html lang="en" data-theme="black" style="scroll-behavior: smooth;" class=" overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,15 +68,11 @@
 <body style="padding: 40px 5% 0px 5%; font-family: Montserrat;">
     <!-----------Initialize AOS----------->
     <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
+        AOS.init();
     </script>
 
     <!-----------------Navbar----------------->
-    <div id="top" class="navbar flex flex-row justify-between fixed z-50" data-aos="fade-down">
+    <div id="top" class="navbar flex flex-row justify-between absolute z-50" data-aos="fade-down">
         <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-zinc-300">
@@ -523,53 +519,6 @@
     </div>
     
     <!-- Add JavaScript at the end of the body -->
-    <script>
-        // Initialize EmailJS with your User ID
-        (function() {
-            emailjs.init("OpyKRxZNZHW8puXM0"); // Replace with your EmailJS User ID (e.g., user_123456789)
-        })();
     
-        // Handle form submission
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-    
-            // Get form data
-            const fullName = document.getElementById('full_name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('message').value.trim();
-            const messageDiv = document.getElementById('form-message');
-    
-            // Validate form data
-            if (!fullName || !email || !subject || !message) {
-                messageDiv.style.display = 'block';
-                messageDiv.style.color = '#ff4444';
-                messageDiv.textContent = 'All fields are required!';
-                return;
-            }
-    
-            // Prepare data for EmailJS
-            const templateParams = {
-                full_name: fullName,
-                email: email,
-                subject: subject,
-                message: message,
-                timestamp: new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }) // IST timestamp
-            };
-    
-            // Send email using EmailJS
-            emailjs.send('service_rl1he4m', 'template_5l7q0fg', templateParams)
-                .then(function(response) {
-                    messageDiv.style.display = 'block';
-                    messageDiv.style.color = '#00cc00';
-                    messageDiv.textContent = 'Message sent successfully!';
-                    document.getElementById('contact-form').reset(); // Clear the form
-                }, function(error) {
-                    messageDiv.style.display = 'block';
-                    messageDiv.style.color = '#ff4444';
-                    messageDiv.textContent = 'Failed to send message: ' + error.text;
-                });
-        });
-    </script>
 </body>
 </html>
