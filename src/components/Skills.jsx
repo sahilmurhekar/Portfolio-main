@@ -281,7 +281,7 @@ const Skills = () => {
               className={`h-20 ${
                 progImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/python.png"
+              src="/assets/python.png"
               alt=""
               ref={progImg1Ref}
             />
@@ -289,7 +289,7 @@ const Skills = () => {
               className={`h-20 ${
                 progImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/cpp.png"
+              src="/assets/cpp.png"
               alt=""
               ref={progImg2Ref}
             />
@@ -297,7 +297,7 @@ const Skills = () => {
               className={`h-20 ${
                 progImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/java.png"
+              src="/assets/java.png"
               alt=""
               ref={progImg3Ref}
             />
@@ -305,7 +305,7 @@ const Skills = () => {
               className={`h-20 ${
                 progImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/c.png"
+              src="/assets/c.png"
               alt=""
               ref={progImg4Ref}
             />
@@ -313,7 +313,7 @@ const Skills = () => {
               className={`h-20 ${
                 progImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/sql.png"
+              src="/assets/sql.png"
               alt=""
               ref={progImg5Ref}
             />
@@ -334,7 +334,7 @@ const Skills = () => {
               className={`h-20 ${
                 bigDataImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/hadoop.png"
+              src="/assets/hadoop.png"
               alt=""
               ref={bigDataImg1Ref}
             />
@@ -342,7 +342,7 @@ const Skills = () => {
               className={`h-20 ${
                 bigDataImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/hive.png"
+              src="/assets/hive.png"
               alt=""
               ref={bigDataImg2Ref}
             />
@@ -350,7 +350,7 @@ const Skills = () => {
               className={`h-20 ${
                 bigDataImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/hbase.png"
+              src="/assets/hbase.png"
               alt=""
               ref={bigDataImg3Ref}
             />
@@ -358,7 +358,7 @@ const Skills = () => {
               className={`h-20 ${
                 bigDataImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/mongodb.png"
+              src="/assets/mongodb.png"
               alt=""
               ref={bigDataImg4Ref}
             />
@@ -367,7 +367,7 @@ const Skills = () => {
               className={`h-20 ${
                 bigDataImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/cassandra.png"
+              src="/assets/cassandra.png"
               alt=""
               ref={bigDataImg5Ref}
             />
@@ -376,7 +376,7 @@ const Skills = () => {
               className={`h-20 ${
                 bigDataImg6InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/spark.png"
+              src="/assets/spark.png"
               alt=""
               ref={bigDataImg6Ref}
             />
@@ -397,7 +397,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/figma.png"
+              src="/assets/figma.png"
               alt=""
               ref={webDevImg1Ref}
             />
@@ -405,7 +405,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/framer.png"
+              src="/assets/framer.png"
               alt=""
               ref={webDevImg2Ref}
             />
@@ -413,13 +413,13 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/html.png"
+              src="/assets/html.png"
               alt=""
               ref={webDevImg3Ref}
             />
             <img
               className={`h-20 ${webDevImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'}`}
-              src="/src/assets/css.png"
+              src="/assets/css.png"
               alt=""
               ref={webDevImg4Ref}
             />
@@ -427,7 +427,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/tailwind.png"
+              src="/assets/tailwind.png"
               alt=""
               ref={webDevImg5Ref}
             />
@@ -435,7 +435,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg6InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/js.png"
+              src="/assets/js.png"
               alt=""
               ref={webDevImg6Ref}
             />
@@ -443,7 +443,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg7InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/astro.png"
+              src="/assets/astro.png"
               alt=""
               ref={webDevImg7Ref}
             />
@@ -451,7 +451,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg8InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/logo.svg"
+              src="/assets/logo.svg"
               alt=""
               ref={webDevImg8Ref}
             />
@@ -459,7 +459,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg9InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/react.png"
+              src="/assets/react.png"
               alt=""
               ref={webDevImg9Ref}
             />
@@ -467,7 +467,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg10InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/nodejs.png"
+              src="/assets/nodejs.png"
               alt=""
               ref={webDevImg10Ref}
             />
@@ -475,7 +475,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg11InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/expressjs.png"
+              src="/assets/expressjs.png"
               alt=""
               ref={webDevImg11Ref}
             />
@@ -483,7 +483,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg12InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/flask.png"
+              src="/assets/flask.png"
               alt=""
               ref={webDevImg12Ref}
             />
@@ -491,7 +491,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg13InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/django.png"
+              src="/assets/django.png"
               alt=""
               ref={webDevImg13Ref}
             />
@@ -499,7 +499,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg14InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/jwt.png"
+              src="/assets/jwt.png"
               alt=""
               ref={webDevImg14Ref}
             />
@@ -507,7 +507,7 @@ const Skills = () => {
               className={`h-20 ${
                 webDevImg15InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
-              src="/src/assets/socketio.png"
+              src="/assets/socketio.png"
               alt=""
               ref={webDevImg15Ref}
             />
@@ -532,7 +532,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/opencv.png"
+              src="/assets/opencv.png"
               alt=""
               ref={dataScienceImg1Ref}
             />
@@ -542,7 +542,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/matplotlib.png"
+              src="/assets/matplotlib.png"
               alt=""
               ref={dataScienceImg2Ref}
             />
@@ -552,7 +552,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/pandas.png"
+              src="/assets/pandas.png"
               alt=""
               ref={dataScienceImg3Ref}
             />
@@ -562,7 +562,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/numpy.png"
+              src="/assets/numpy.png"
               alt=""
               ref={dataScienceImg4Ref}
             />
@@ -572,7 +572,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/scikitlearn.png"
+              src="/assets/scikitlearn.png"
               alt=""
               ref={dataScienceImg5Ref}
             />
@@ -582,7 +582,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/pytorch.png"
+              src="/assets/pytorch.png"
               alt=""
               ref={dataScienceImg6Ref}
             />
@@ -592,7 +592,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/tensorflow.png"
+              src="/assets/tensorflow.png"
               alt=""
               ref={dataScienceImg7Ref}
             />
@@ -602,7 +602,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/powerbi.png"
+              src="/assets/powerbi.png"
               alt=""
               ref={dataScienceImg8Ref}
             />
@@ -613,7 +613,7 @@ const Skills = () => {
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
-              src="/src/assets/llms.png"
+              src="/assets/llms.png"
               alt=""
               ref={dataScienceImg9Ref}
             />

@@ -76,7 +76,7 @@ const Projects = () => {
           ref={card1Ref}
         >
           <figure>
-            <img src="/src/assets/hirecrest.png" alt="Project" />
+            <img src="/assets/hirecrest.png" alt="Project" />
           </figure>
           <div className="card-body items-center md:items-start">
             <h2 className="card-title">HireCrest AI</h2>
@@ -110,7 +110,7 @@ const Projects = () => {
           ref={card2Ref}
         >
           <figure>
-            <img src="/src/assets/visiblevoice.png" alt="Project" />
+            <img src="/assets/visiblevoice.png" alt="Project" />
           </figure>
           <div className="card-body items-center md:items-start">
             <h2 className="card-title">VisibleVoice AI</h2>
@@ -140,7 +140,7 @@ const Projects = () => {
           ref={card3Ref}
         >
           <figure>
-            <img src="/src/assets/plingchat.png" alt="Project" />
+            <img src="/assets/plingchat.png" alt="Project" />
           </figure>
           <div className="card-body items-center md:items-start">
             <h2 className="card-title">PlingChat</h2>
@@ -173,7 +173,7 @@ const Projects = () => {
           ref={card4Ref}
         >
           <figure>
-            <img src="/src/assets/interviewprep.png" alt="Project" />
+            <img src="/assets/interviewprep.png" alt="Project" />
           </figure>
           <div className="card-body items-center md:items-start">
             <h2 className="card-title">InterviewPrep AI</h2>
@@ -207,7 +207,7 @@ const Projects = () => {
           ref={card5Ref}
         >
           <figure>
-            <img src="/src/assets/preprocessai.png" alt="Project" />
+            <img src="/assets/preprocessai.png" alt="Project" />
           </figure>
           <div className="card-body items-center md:items-start">
             <h2 className="card-title">PreProcessor AI</h2>
@@ -241,7 +241,7 @@ const Projects = () => {
           ref={card6Ref}
         >
           <figure>
-            <img src="/src/assets/skincare.png" alt="Project" />
+            <img src="/assets/skincare.png" alt="Project" />
           </figure>
           <div className="card-body items-center md:items-start">
             <h2 className="card-title">Skincare AI</h2>
