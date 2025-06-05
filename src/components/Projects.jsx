@@ -95,7 +95,7 @@ const Projects = () => {
               <a
                 className="btn btn-primary rounded-lg"
                 target="_blank"
-                href="https://hirecrest.up.railway.app"
+                href="https://hirecrest.onrender.com"
               >
                 Live site
               </a>

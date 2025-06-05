@@ -278,43 +278,43 @@ const Skills = () => {
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 progImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/python.png"
-              alt=""
+              alt="Python"
               ref={progImg1Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 progImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/cpp.png"
-              alt=""
+              alt="C++"
               ref={progImg2Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 progImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/java.png"
-              alt=""
+              alt="Java"
               ref={progImg3Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 progImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/c.png"
-              alt=""
+              alt="C"
               ref={progImg4Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 progImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/sql.png"
-              alt=""
+              alt="SQL"
               ref={progImg5Ref}
             />
           </div>
@@ -331,53 +331,53 @@ const Skills = () => {
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/hadoop.png"
-              alt=""
+              alt="Hadoop"
               ref={bigDataImg1Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/hive.png"
-              alt=""
+              alt="Hive"
               ref={bigDataImg2Ref}
             />
-            <img
-              className={`h-20 ${
+            <img style={{ filter: 'invert()' }}
+              className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/hbase.png"
-              alt=""
+              alt="HBase"
               ref={bigDataImg3Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/mongodb.png"
-              alt=""
+              alt="MongoDB"
               ref={bigDataImg4Ref}
             />
             <img
               style={{ filter: 'invert()' }}
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/cassandra.png"
-              alt=""
+              alt="Cassandra"
               ref={bigDataImg5Ref}
             />
             <img
               style={{ filter: 'invert()' }}
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg6InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/spark.png"
-              alt=""
+              alt="Spark"
               ref={bigDataImg6Ref}
             />
           </div>
@@ -394,121 +394,123 @@ const Skills = () => {
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/figma.png"
-              alt=""
+              alt="Figma"
               ref={webDevImg1Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/framer.png"
-              alt=""
+              alt="Framer"
               ref={webDevImg2Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/html.png"
-              alt=""
+              alt="HTML"
               ref={webDevImg3Ref}
             />
             <img
-              className={`h-20 ${webDevImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'}`}
+              className={`h-20 transition-transform hover:scale-110 ${
+                webDevImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
+              }`}
               src="/assets/css.png"
-              alt=""
+              alt="CSS"
               ref={webDevImg4Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/tailwind.png"
-              alt=""
+              alt="Tailwind CSS"
               ref={webDevImg5Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg6InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/js.png"
-              alt=""
+              alt="JavaScript"
               ref={webDevImg6Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg7InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/astro.png"
-              alt=""
+              alt="Astro"
               ref={webDevImg7Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg8InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/logo.svg"
-              alt=""
+              alt="Logo"
               ref={webDevImg8Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg9InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/react.png"
-              alt=""
+              alt="React"
               ref={webDevImg9Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg10InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/nodejs.png"
-              alt=""
+              alt="Node.js"
               ref={webDevImg10Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg11InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/expressjs.png"
-              alt=""
+              alt="Express.js"
               ref={webDevImg11Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg12InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/flask.png"
-              alt=""
+              alt="Flask"
               ref={webDevImg12Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg13InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/django.png"
-              alt=""
+              alt="Django"
               ref={webDevImg13Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg14InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/jwt.png"
-              alt=""
+              alt="JWT"
               ref={webDevImg14Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg15InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
               }`}
               src="/assets/socketio.png"
-              alt=""
+              alt="Socket.IO"
               ref={webDevImg15Ref}
             />
           </div>
@@ -527,94 +529,94 @@ const Skills = () => {
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg1InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/opencv.png"
-              alt=""
+              alt="OpenCV"
               ref={dataScienceImg1Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg2InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/matplotlib.png"
-              alt=""
+              alt="Matplotlib"
               ref={dataScienceImg2Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg3InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/pandas.png"
-              alt=""
+              alt="Pandas"
               ref={dataScienceImg3Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg4InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/numpy.png"
-              alt=""
+              alt="NumPy"
               ref={dataScienceImg4Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg5InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/scikitlearn.png"
-              alt=""
+              alt="Scikit-learn"
               ref={dataScienceImg5Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg6InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/pytorch.png"
-              alt=""
+              alt="PyTorch"
               ref={dataScienceImg6Ref}
             />
             <img
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg7InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/tensorflow.png"
-              alt=""
+              alt="TensorFlow"
               ref={dataScienceImg7Ref}
             />
             <img
-              className={`h-20 rounded-lg ${
+              className={`h-20 rounded-lg transition-transform hover:scale-110 ${
                 dataScienceImg8InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/powerbi.png"
-              alt=""
+              alt="Power BI"
               ref={dataScienceImg8Ref}
             />
             <img
               style={{ filter: 'invert()' }}
-              className={`h-20 ${
+              className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg9InView
                   ? 'animate__animated animate__zoomIn animate__delay-0s'
                   : 'opacity-0'
               }`}
               src="/assets/llms.png"
-              alt=""
+              alt="LLMs"
               ref={dataScienceImg9Ref}
             />
           </div>

@@ -75,3 +75,7 @@
       transform: translateY(0);
   }
 }
+
+.scaleicon{
+  animation: scale 2s ease-in-out infinite;
+}
