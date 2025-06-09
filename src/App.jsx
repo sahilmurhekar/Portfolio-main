@@ -23,7 +23,7 @@ function App() {
       <Highlights />
       <Contact/>
 
-      <a href="#top" className='btn btn btn-ghost btn-circle bg-zinc-300 fixed bottom-10 right-10 z-50 text-2xl text-black floating-icon'> ↑ </a>
+      <a href="#top" className='btn btn btn-ghost btn-circle bg-zinc-300 fixed bottom-10 right-18 z-50 text-2xl text-black floating-icon'> ↑ </a>
     </>
   )
 }
