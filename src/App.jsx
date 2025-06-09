@@ -9,11 +9,27 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Highlights from './components/Highlights'
 import Contact from './components/Contact'
+import Particles from './components/Particles';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
 
   return (
     <>
+      <CustomCursor />
+    <div style={{ width: '100%', height: '100%', position: 'fixed' }}>
+    <Particles
+    particleColors={['#ffffff', '#ffffff']}
+    particleCount={300}
+    particleSpread={10}
+    speed={0.5}
+    particleBaseSize={100}
+    moveParticlesOnHover={true}
+    alphaParticles={true}
+    disableRotation={true}
+  />
+        </div>
+  
       <Navbar />
       <Hero />
       <About />
@@ -24,6 +40,7 @@ function App() {
       <Contact/>
 
       <a href="#top" className='btn btn btn-ghost btn-circle bg-zinc-300 fixed bottom-10 right-18 z-50 text-2xl text-black floating-icon'> ↑ </a>
+
     </>
   )
 }

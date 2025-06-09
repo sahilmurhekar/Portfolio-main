@@ -1,6 +1,6 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
-
+import Magnet from './Magnet'
 const About = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -18,11 +18,13 @@ const About = () => {
         </h1>
       </div>
       <div className="flex flex-col pt-28 justify-center items-center lg:flex-row lg:gap-24">
+      <Magnet padding={50} disabled={false} magnetStrength={5}>
         <img
           className={`rounded-4xl w-64 md:w-96 animate__animated ${inView ? 'animate__fadeInRight' : ''} animate__delay-700ms`}
           src="/assets/hero.jpg"
           alt=""
         />
+        </Magnet>
         <div>
           <h3
             style={{ fontFamily: 'Montserrat' }}

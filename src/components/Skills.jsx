@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-
+import Magnet from './Magnet';
 const Skills = () => {
   // Define refs and inView states for each animated section
   const { ref: sectionRef, inView: sectionInView } = useInView({
@@ -277,6 +277,7 @@ const Skills = () => {
             PROGRAMMING
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
+          <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 progImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -285,6 +286,8 @@ const Skills = () => {
               alt="Python"
               ref={progImg1Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 progImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -293,6 +296,8 @@ const Skills = () => {
               alt="C++"
               ref={progImg2Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 progImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -301,6 +306,8 @@ const Skills = () => {
               alt="Java"
               ref={progImg3Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 progImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -309,6 +316,8 @@ const Skills = () => {
               alt="C"
               ref={progImg4Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 progImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -317,6 +326,7 @@ const Skills = () => {
               alt="SQL"
               ref={progImg5Ref}
             />
+            </Magnet>
           </div>
         </div>
 
@@ -330,6 +340,7 @@ const Skills = () => {
             BIG DATA TOOLS
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
+          <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -338,6 +349,8 @@ const Skills = () => {
               alt="Hadoop"
               ref={bigDataImg1Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -346,6 +359,8 @@ const Skills = () => {
               alt="Hive"
               ref={bigDataImg2Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img style={{ filter: 'invert()' }}
               className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -354,6 +369,8 @@ const Skills = () => {
               alt="HBase"
               ref={bigDataImg3Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 bigDataImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -362,6 +379,8 @@ const Skills = () => {
               alt="MongoDB"
               ref={bigDataImg4Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               style={{ filter: 'invert()' }}
               className={`h-20 transition-transform hover:scale-110 ${
@@ -371,6 +390,8 @@ const Skills = () => {
               alt="Cassandra"
               ref={bigDataImg5Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               style={{ filter: 'invert()' }}
               className={`h-20 transition-transform hover:scale-110 ${
@@ -380,6 +401,7 @@ const Skills = () => {
               alt="Spark"
               ref={bigDataImg6Ref}
             />
+            </Magnet>
           </div>
         </div>
 
@@ -393,6 +415,7 @@ const Skills = () => {
             WEB DEVELOPMENT
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
+          <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -401,6 +424,8 @@ const Skills = () => {
               alt="Figma"
               ref={webDevImg1Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -409,6 +434,8 @@ const Skills = () => {
               alt="Framer"
               ref={webDevImg2Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -417,6 +444,8 @@ const Skills = () => {
               alt="HTML"
               ref={webDevImg3Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -425,6 +454,8 @@ const Skills = () => {
               alt="CSS"
               ref={webDevImg4Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -433,6 +464,8 @@ const Skills = () => {
               alt="Tailwind CSS"
               ref={webDevImg5Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg6InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -441,6 +474,8 @@ const Skills = () => {
               alt="JavaScript"
               ref={webDevImg6Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg7InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -449,6 +484,8 @@ const Skills = () => {
               alt="Astro"
               ref={webDevImg7Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg8InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -457,6 +494,8 @@ const Skills = () => {
               alt="Logo"
               ref={webDevImg8Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg9InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -465,6 +504,8 @@ const Skills = () => {
               alt="React"
               ref={webDevImg9Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg10InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -473,6 +514,8 @@ const Skills = () => {
               alt="Node.js"
               ref={webDevImg10Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg11InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -481,6 +524,8 @@ const Skills = () => {
               alt="Express.js"
               ref={webDevImg11Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg12InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -489,6 +534,8 @@ const Skills = () => {
               alt="Flask"
               ref={webDevImg12Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg13InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -497,6 +544,8 @@ const Skills = () => {
               alt="Django"
               ref={webDevImg13Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg14InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -505,6 +554,8 @@ const Skills = () => {
               alt="JWT"
               ref={webDevImg14Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 webDevImg15InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
@@ -513,6 +564,7 @@ const Skills = () => {
               alt="Socket.IO"
               ref={webDevImg15Ref}
             />
+            </Magnet>
           </div>
         </div>
 
@@ -528,6 +580,7 @@ const Skills = () => {
             DATA SCIENCE
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
+          <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg1InView
@@ -538,6 +591,8 @@ const Skills = () => {
               alt="OpenCV"
               ref={dataScienceImg1Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg2InView
@@ -548,6 +603,8 @@ const Skills = () => {
               alt="Matplotlib"
               ref={dataScienceImg2Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg3InView
@@ -558,6 +615,8 @@ const Skills = () => {
               alt="Pandas"
               ref={dataScienceImg3Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg4InView
@@ -568,6 +627,8 @@ const Skills = () => {
               alt="NumPy"
               ref={dataScienceImg4Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg5InView
@@ -578,6 +639,8 @@ const Skills = () => {
               alt="Scikit-learn"
               ref={dataScienceImg5Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg6InView
@@ -588,6 +651,8 @@ const Skills = () => {
               alt="PyTorch"
               ref={dataScienceImg6Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 transition-transform hover:scale-110 ${
                 dataScienceImg7InView
@@ -598,6 +663,8 @@ const Skills = () => {
               alt="TensorFlow"
               ref={dataScienceImg7Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               className={`h-20 rounded-lg transition-transform hover:scale-110 ${
                 dataScienceImg8InView
@@ -608,6 +675,8 @@ const Skills = () => {
               alt="Power BI"
               ref={dataScienceImg8Ref}
             />
+            </Magnet>
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
             <img
               style={{ filter: 'invert()' }}
               className={`h-20 transition-transform hover:scale-110 ${
@@ -619,6 +688,7 @@ const Skills = () => {
               alt="LLMs"
               ref={dataScienceImg9Ref}
             />
+            </Magnet>
           </div>
         </div>
       </div>

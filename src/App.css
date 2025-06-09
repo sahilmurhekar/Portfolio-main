@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
@@ -78,4 +79,95 @@
 
 .scaleicon{
   animation: scale 2s ease-in-out infinite;
+}
+
+.animated-gradient-text {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  max-width: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  /* 20px */
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.5s ease-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 300% 100%;
+  animation: gradient linear infinite;
+  border-radius: inherit;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gradient-overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #060010;
+  z-index: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-content {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient linear infinite;
+  font-family: Krona One;
+}
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -50;
+}
+
+.custom-cursor {
+  position: fixed; /* Position relative to the viewport */
+  width: 25px;
+  height: 25px;
+  border: #ffffff 2px solid; /* White border for visibility */
+  background-color: transparent; /* Red color for visibility */
+  border-radius: 50%; /* Circular shape */
+  pointer-events: none; /* Prevent cursor from interfering with clicks */
+  transform: translate(-50%, -50%); /* Center the cursor on the mouse */
+  z-index: 9999; /* Ensure cursor is above other elements */
 }

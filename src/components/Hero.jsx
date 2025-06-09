@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import BlurText from "./BlurText";
-
+import GradientText from "./GradientText";
 const Hero = () => {
   // Define refs and inView states for each animated section
   const { ref: titleRef, inView: titleInView } = useInView({
@@ -37,14 +37,13 @@ const Hero = () => {
         <h4 className="text-center text-sm md:text-md lg:text-lg">Hello I'm</h4>
       </div>
       <div ref={nameRef} className={`pt-4 ${nameInView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'}`}>
-<BlurText
-  text="SAHIL MURHEKAR"
-  delay={150}
-  animateBy="words"
-  direction="top"
-  onAnimationComplete={handleAnimationComplete}
+      <GradientText
+  animationSpeed={5}
+  showBorder={false}
   className="text-center text-4xl md:text-8xl lg:text-9xl px-[5%]"
-/>
+>
+SAHIL MURHEKAR
+</GradientText>
       </div>
       <div ref={descRef} className={`pt-4 w-82 md:w-120 ${descInView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'}`}>
         <h4 className="text-center text-sm md:text-md lg:text-lg">
