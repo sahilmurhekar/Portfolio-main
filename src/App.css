@@ -159,15 +159,3 @@
   height: 100vh;
   z-index: -50;
 }
-
-.custom-cursor {
-  position: fixed; /* Position relative to the viewport */
-  width: 25px;
-  height: 25px;
-  border: #ffffff 2px solid; /* White border for visibility */
-  background-color: transparent; /* Red color for visibility */
-  border-radius: 50%; /* Circular shape */
-  pointer-events: none; /* Prevent cursor from interfering with clicks */
-  transform: translate(-50%, -50%); /* Center the cursor on the mouse */
-  z-index: 9999; /* Ensure cursor is above other elements */
-}
