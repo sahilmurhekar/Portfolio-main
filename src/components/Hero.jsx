@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import BlurText from "./BlurText";
 
 const Hero = () => {
   // Define refs and inView states for each animated section
@@ -20,6 +21,10 @@ const Hero = () => {
     delay: 300,
   });
 
+  const handleAnimationComplete = () => {
+    console.log('Animation completed!');
+  };
+
   const { ref: iconRef, inView: iconInView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
@@ -28,13 +33,18 @@ const Hero = () => {
 
   return (
     <div id='top' className="flex flex-col items-center justify-center overflow-hidden pt-36">
-      <div ref={titleRef} className={`pt-42 ${titleInView ? 'animate__animated animate__fadeIn animate__delay-0s' : 'opacity-0'}`}>
+      <div ref={titleRef} className={`pt-42 ${titleInView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'}`}>
         <h4 className="text-center text-sm md:text-md lg:text-lg">Hello I'm</h4>
       </div>
       <div ref={nameRef} className={`pt-4 ${nameInView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'}`}>
-        <h1 style={{ fontFamily: 'Krona One' }} className="text-center gradient-text text-4xl md:text-8xl lg:text-9xl px-[5%]">
-          SAHIL MURHEKAR
-        </h1>
+<BlurText
+  text="SAHIL MURHEKAR"
+  delay={150}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+  className="text-center text-4xl md:text-8xl lg:text-9xl px-[5%]"
+/>
       </div>
       <div ref={descRef} className={`pt-4 w-82 md:w-120 ${descInView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'}`}>
         <h4 className="text-center text-sm md:text-md lg:text-lg">
