@@ -124,7 +124,7 @@ const Journey = () => {
             </div>
             <div className="timeline-end md:mb-10">
               <time className="font-mono italic">Jun 2025 - Jul 2025</time>
-              <div className="text-lg font-black">AI Developer Intern</div>
+              <div className="text-lg font-black">AI Research Intern</div>
               <h1 style={{ filter: 'opacity(0.7)' }} className="text-sm italic">
                 J. M. Baxi & Co., Mumbai
               </h1>
