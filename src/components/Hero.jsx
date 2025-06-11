@@ -42,7 +42,7 @@ const Hero = () => {
   showBorder={false}
   className="text-center text-4xl md:text-8xl lg:text-9xl px-[5%]"
 >
-SAHIL MURHEKAR
+<h1>SAHIL MURHEKAR</h1>
 </GradientText>
       </div>
       <div ref={descRef} className={`pt-4 w-82 md:w-120 ${descInView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'}`}>
