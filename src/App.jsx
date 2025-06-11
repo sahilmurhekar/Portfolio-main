@@ -10,14 +10,12 @@ import Skills from './components/Skills'
 import Highlights from './components/Highlights'
 import Contact from './components/Contact'
 import Particles from './components/Particles';
-import AnimatedCursor from './components/AnimatedCursor';
 
 
 function App() {
 
   return (
     <>
-    <AnimatedCursor/>
     <div style={{ width: '100%', height: '100%', position: 'fixed' }}>
     <Particles
     particleColors={['#ffffff', '#ffffff']}
