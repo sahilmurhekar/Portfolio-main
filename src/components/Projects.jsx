@@ -69,10 +69,10 @@ const Projects = () => {
         </h1>
       </div>
 
-      <div className="flex gap-16 flex-wrap justify-center pt-28">
+      <div className="flex gap-16 flex-wrap justify-center pt-28 md:px-[10%] lg:px-[15%]">
         <Magnet padding={50} disabled={false} magnetStrength={15}>
         <div
-          className={`card bg-base-300 w-96 shadow-sm rounded-2xl p-5 ${
+          className={`card bg-base-300 w-72 shadow-sm rounded-2xl p-5 ${
             card1InView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
           }`}
           ref={card1Ref}
@@ -107,7 +107,7 @@ const Projects = () => {
         </Magnet>
         <Magnet padding={50} disabled={false} magnetStrength={15}>
         <div
-          className={`card bg-base-300 w-96 shadow-sm rounded-2xl p-5 ${
+          className={`card bg-base-300 w-72 shadow-sm rounded-2xl p-5 ${
             card2InView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
           }`}
           ref={card2Ref}
@@ -138,7 +138,7 @@ const Projects = () => {
         </Magnet>
         <Magnet padding={50} disabled={false} magnetStrength={15}>
         <div
-          className={`card bg-base-300 w-96 shadow-sm rounded-2xl p-5 ${
+          className={`card bg-base-300 w-72 shadow-sm rounded-2xl p-5 ${
             card3InView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
           }`}
           ref={card3Ref}
@@ -172,7 +172,7 @@ const Projects = () => {
         </Magnet>
         <Magnet padding={50} disabled={false} magnetStrength={15}>
         <div
-          className={`card bg-base-300 w-96 shadow-sm rounded-2xl p-5 ${
+          className={`card bg-base-300 w-72 shadow-sm rounded-2xl p-5 ${
             card4InView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
           }`}
           ref={card4Ref}
@@ -207,7 +207,7 @@ const Projects = () => {
         </Magnet>
         <Magnet padding={50} disabled={false} magnetStrength={15}>
         <div
-          className={`card bg-base-300 w-96 shadow-sm rounded-2xl p-5 ${
+          className={`card bg-base-300 w-72 shadow-sm rounded-2xl p-5 ${
             card5InView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
           }`}
           ref={card5Ref}
@@ -242,7 +242,7 @@ const Projects = () => {
         </Magnet>
         <Magnet padding={50} disabled={false} magnetStrength={15}>
         <div
-          className={`card bg-base-300 w-96 shadow-sm rounded-2xl p-5 ${
+          className={`card bg-base-300 w-72 shadow-sm rounded-2xl p-5 ${
             card6InView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
           }`}
           ref={card6Ref}

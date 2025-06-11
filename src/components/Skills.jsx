@@ -411,7 +411,7 @@ const Skills = () => {
           }`}
           ref={webDevSectionRef}
         >
-          <div className="flex justify-center items-center text-2xl font-black gradient-text">
+          <div className="flex justify-center items-center text-center text-2xl font-black gradient-text">
             WEB DEVELOPMENT
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
