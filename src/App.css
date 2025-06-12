@@ -38,12 +38,17 @@
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #ffffff, #666666); /* Customize colors */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #666666
+  ); /* Customize colors */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
-.sexybutton{
+.sexybutton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +61,7 @@
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
-.sexybutton:hover{
+.sexybutton:hover {
   background-color: #ffffff;
   color: black;
 }
@@ -67,17 +72,17 @@
 
 @keyframes float {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-.scaleicon{
+.scaleicon {
   animation: scale 2s ease-in-out infinite;
 }
 
@@ -92,6 +97,7 @@
   border-radius: 1.25rem;
   /* 20px */
   font-weight: 500;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: box-shadow 0.5s ease-out;
   overflow: hidden;
@@ -145,8 +151,8 @@
   position: relative;
   z-index: 2;
   background-size: 300% 100%;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   animation: gradient linear infinite;
   font-family: Krona One;

@@ -1,6 +1,6 @@
-import React from 'react';
-import { useInView } from 'react-intersection-observer';
-import Magnet from './Magnet';
+import React from "react";
+import { useInView } from "react-intersection-observer";
+import Magnet from "./Magnet";
 const Skills = () => {
   // Define refs and inView states for each animated section
   const { ref: sectionRef, inView: sectionInView } = useInView({
@@ -188,11 +188,12 @@ const Skills = () => {
     delay: 580,
   });
 
-  const { ref: dataScienceSectionRef, inView: dataScienceSectionInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.3,
-    delay: 200,
-  });
+  const { ref: dataScienceSectionRef, inView: dataScienceSectionInView } =
+    useInView({
+      triggerOnce: true,
+      threshold: 0.3,
+      delay: 200,
+    });
 
   const { ref: dataScienceImg1Ref, inView: dataScienceImg1InView } = useInView({
     triggerOnce: true,
@@ -251,15 +252,21 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className={`pt-48 px-[15%] ${sectionInView ? 'animate__animated animate__fadeIn' : 'opacity-0'}`}
+      className={`pt-48 px-[15%] ${
+        sectionInView ? "animate__animated animate__fadeIn" : "opacity-0"
+      }`}
       ref={sectionRef}
     >
       <div
         ref={titleRef}
-        className={`${titleInView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'}`}
+        className={`${
+          titleInView
+            ? "animate__animated animate__zoomIn animate__delay-0s"
+            : "opacity-0"
+        }`}
       >
         <h1
-          style={{ fontFamily: 'Krona One' }}
+          style={{ fontFamily: "Krona One" }}
           className="text-4xl text-center gradient-text md:text-5xl"
         >
           SKILLS
@@ -269,7 +276,9 @@ const Skills = () => {
       <div className="flex flex-col pt-24 gap-32">
         <div
           className={`flex flex-col gap-8 justify-center items-center ${
-            progSectionInView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
+            progSectionInView
+              ? "animate__animated animate__fadeInUp animate__delay-0s"
+              : "opacity-0"
           }`}
           ref={progSectionRef}
         >
@@ -277,62 +286,74 @@ const Skills = () => {
             PROGRAMMING
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
-          <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                progImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/python.png"
-              alt="Python"
-              ref={progImg1Ref}
-            />
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  progImg1InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/python.png"
+                alt="Python"
+                ref={progImg1Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                progImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/cpp.png"
-              alt="C++"
-              ref={progImg2Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  progImg2InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/cpp.png"
+                alt="C++"
+                ref={progImg2Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                progImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/java.png"
-              alt="Java"
-              ref={progImg3Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  progImg3InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/java.png"
+                alt="Java"
+                ref={progImg3Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                progImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/c.png"
-              alt="C"
-              ref={progImg4Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  progImg4InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/c.png"
+                alt="C"
+                ref={progImg4Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                progImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/sql.png"
-              alt="SQL"
-              ref={progImg5Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  progImg5InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/sql.png"
+                alt="SQL"
+                ref={progImg5Ref}
+              />
             </Magnet>
           </div>
         </div>
 
         <div
           className={`flex flex-col gap-8 justify-center items-center ${
-            bigDataSectionInView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
+            bigDataSectionInView
+              ? "animate__animated animate__fadeInUp animate__delay-0s"
+              : "opacity-0"
           }`}
           ref={bigDataSectionRef}
         >
@@ -340,74 +361,89 @@ const Skills = () => {
             BIG DATA TOOLS
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
-          <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                bigDataImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/hadoop.png"
-              alt="Hadoop"
-              ref={bigDataImg1Ref}
-            />
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  bigDataImg1InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/hadoop.png"
+                alt="Hadoop"
+                ref={bigDataImg1Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                bigDataImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/hive.png"
-              alt="Hive"
-              ref={bigDataImg2Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  bigDataImg2InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/hive.png"
+                alt="Hive"
+                ref={bigDataImg2Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img style={{ filter: 'invert()' }}
-              className={`h-20 transition-transform hover:scale-110 ${
-                bigDataImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/hbase.png"
-              alt="HBase"
-              ref={bigDataImg3Ref}
-            />
+              <img
+                style={{ filter: "invert()" }}
+                className={`h-20 transition-transform hover:scale-110 ${
+                  bigDataImg3InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/hbase.png"
+                alt="HBase"
+                ref={bigDataImg3Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                bigDataImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/mongodb.png"
-              alt="MongoDB"
-              ref={bigDataImg4Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  bigDataImg4InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/mongodb.png"
+                alt="MongoDB"
+                ref={bigDataImg4Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              style={{ filter: 'invert()' }}
-              className={`h-20 transition-transform hover:scale-110 ${
-                bigDataImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/cassandra.png"
-              alt="Cassandra"
-              ref={bigDataImg5Ref}
-            />
+              <img
+                style={{ filter: "invert()" }}
+                className={`h-20 transition-transform hover:scale-110 ${
+                  bigDataImg5InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/cassandra.png"
+                alt="Cassandra"
+                ref={bigDataImg5Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              style={{ filter: 'invert()' }}
-              className={`h-20 transition-transform hover:scale-110 ${
-                bigDataImg6InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/spark.png"
-              alt="Spark"
-              ref={bigDataImg6Ref}
-            />
+              <img
+                style={{ filter: "invert()" }}
+                className={`h-20 transition-transform hover:scale-110 ${
+                  bigDataImg6InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/spark.png"
+                alt="Spark"
+                ref={bigDataImg6Ref}
+              />
             </Magnet>
           </div>
         </div>
 
         <div
           className={`flex flex-col gap-8 justify-center items-center ${
-            webDevSectionInView ? 'animate__animated animate__fadeInUp animate__delay-0s' : 'opacity-0'
+            webDevSectionInView
+              ? "animate__animated animate__fadeInUp animate__delay-0s"
+              : "opacity-0"
           }`}
           ref={webDevSectionRef}
         >
@@ -415,155 +451,185 @@ const Skills = () => {
             WEB DEVELOPMENT
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
-          <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg1InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/figma.png"
-              alt="Figma"
-              ref={webDevImg1Ref}
-            />
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg1InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/figma.png"
+                alt="Figma"
+                ref={webDevImg1Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg2InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/framer.png"
-              alt="Framer"
-              ref={webDevImg2Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg2InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/framer.png"
+                alt="Framer"
+                ref={webDevImg2Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg3InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/html.png"
-              alt="HTML"
-              ref={webDevImg3Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg3InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/html.png"
+                alt="HTML"
+                ref={webDevImg3Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg4InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/css.png"
-              alt="CSS"
-              ref={webDevImg4Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg4InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/css.png"
+                alt="CSS"
+                ref={webDevImg4Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg5InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/tailwind.png"
-              alt="Tailwind CSS"
-              ref={webDevImg5Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg5InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/tailwind.png"
+                alt="Tailwind CSS"
+                ref={webDevImg5Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg6InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/js.png"
-              alt="JavaScript"
-              ref={webDevImg6Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg6InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/js.png"
+                alt="JavaScript"
+                ref={webDevImg6Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg7InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/astro.png"
-              alt="Astro"
-              ref={webDevImg7Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg7InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/astro.png"
+                alt="Astro"
+                ref={webDevImg7Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg8InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/logo.svg"
-              alt="Logo"
-              ref={webDevImg8Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg8InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/logo.svg"
+                alt="Logo"
+                ref={webDevImg8Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg9InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/react.png"
-              alt="React"
-              ref={webDevImg9Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg9InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/react.png"
+                alt="React"
+                ref={webDevImg9Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg10InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/nodejs.png"
-              alt="Node.js"
-              ref={webDevImg10Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg10InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/nodejs.png"
+                alt="Node.js"
+                ref={webDevImg10Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg11InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/expressjs.png"
-              alt="Express.js"
-              ref={webDevImg11Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg11InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/expressjs.png"
+                alt="Express.js"
+                ref={webDevImg11Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg12InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/flask.png"
-              alt="Flask"
-              ref={webDevImg12Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg12InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/flask.png"
+                alt="Flask"
+                ref={webDevImg12Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg13InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/django.png"
-              alt="Django"
-              ref={webDevImg13Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg13InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/django.png"
+                alt="Django"
+                ref={webDevImg13Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg14InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/jwt.png"
-              alt="JWT"
-              ref={webDevImg14Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg14InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/jwt.png"
+                alt="JWT"
+                ref={webDevImg14Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                webDevImg15InView ? 'animate__animated animate__zoomIn animate__delay-0s' : 'opacity-0'
-              }`}
-              src="/assets/socketio.png"
-              alt="Socket.IO"
-              ref={webDevImg15Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  webDevImg15InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/socketio.png"
+                alt="Socket.IO"
+                ref={webDevImg15Ref}
+              />
             </Magnet>
           </div>
         </div>
@@ -571,8 +637,8 @@ const Skills = () => {
         <div
           className={`flex flex-col gap-8 justify-center items-center ${
             dataScienceSectionInView
-              ? 'animate__animated animate__fadeInUp animate__delay-0s'
-              : 'opacity-0'
+              ? "animate__animated animate__fadeInUp animate__delay-0s"
+              : "opacity-0"
           }`}
           ref={dataScienceSectionRef}
         >
@@ -580,114 +646,114 @@ const Skills = () => {
             DATA SCIENCE
           </div>
           <div className="flex flex-wrap gap-8 justify-center items-center">
-          <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg1InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/opencv.png"
-              alt="OpenCV"
-              ref={dataScienceImg1Ref}
-            />
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg1InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/opencv.png"
+                alt="OpenCV"
+                ref={dataScienceImg1Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg2InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/matplotlib.png"
-              alt="Matplotlib"
-              ref={dataScienceImg2Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg2InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/matplotlib.png"
+                alt="Matplotlib"
+                ref={dataScienceImg2Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg3InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/pandas.png"
-              alt="Pandas"
-              ref={dataScienceImg3Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg3InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/pandas.png"
+                alt="Pandas"
+                ref={dataScienceImg3Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg4InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/numpy.png"
-              alt="NumPy"
-              ref={dataScienceImg4Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg4InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/numpy.png"
+                alt="NumPy"
+                ref={dataScienceImg4Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg5InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/scikitlearn.png"
-              alt="Scikit-learn"
-              ref={dataScienceImg5Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg5InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/scikitlearn.png"
+                alt="Scikit-learn"
+                ref={dataScienceImg5Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg6InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/pytorch.png"
-              alt="PyTorch"
-              ref={dataScienceImg6Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg6InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/pytorch.png"
+                alt="PyTorch"
+                ref={dataScienceImg6Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg7InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/tensorflow.png"
-              alt="TensorFlow"
-              ref={dataScienceImg7Ref}
-            />
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg7InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/tensorflow.png"
+                alt="TensorFlow"
+                ref={dataScienceImg7Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              className={`h-20 rounded-lg transition-transform hover:scale-110 ${
-                dataScienceImg8InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/powerbi.png"
-              alt="Power BI"
-              ref={dataScienceImg8Ref}
-            />
+              <img
+                className={`h-20 rounded-lg transition-transform hover:scale-110 ${
+                  dataScienceImg8InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/powerbi.png"
+                alt="Power BI"
+                ref={dataScienceImg8Ref}
+              />
             </Magnet>
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-            <img
-              style={{ filter: 'invert()' }}
-              className={`h-20 transition-transform hover:scale-110 ${
-                dataScienceImg9InView
-                  ? 'animate__animated animate__zoomIn animate__delay-0s'
-                  : 'opacity-0'
-              }`}
-              src="/assets/llms.png"
-              alt="LLMs"
-              ref={dataScienceImg9Ref}
-            />
+              <img
+                style={{ filter: "invert()" }}
+                className={`h-20 transition-transform hover:scale-110 ${
+                  dataScienceImg9InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/llms.png"
+                alt="LLMs"
+                ref={dataScienceImg9Ref}
+              />
             </Magnet>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import "../App.css"
+import "../App.css";
 export default function GradientText({
   children,
   className = "",
@@ -12,9 +12,16 @@ export default function GradientText({
   };
 
   return (
-    <div style={{fontFamily:'Krone One'}} className={`animated-gradient-text ${className}`}>
-      {showBorder && <div className="gradient-overlay" style={gradientStyle}></div>}
-      <div className="text-content " style={gradientStyle}>{children}</div>
+    <div
+      style={{ fontFamily: "Krone One" }}
+      className={`animated-gradient-text ${className}`}
+    >
+      {showBorder && (
+        <div className="gradient-overlay" style={gradientStyle}></div>
+      )}
+      <div className="text-content " style={gradientStyle}>
+        {children}
+      </div>
     </div>
   );
 }
