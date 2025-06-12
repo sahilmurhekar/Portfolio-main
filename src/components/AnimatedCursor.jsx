@@ -1,22 +1,22 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 const AnimatedCursor = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const [cursorVariant, setCursorVariant] = useState('default')
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
     const mouseMove = (e) => {
       setMousePosition({
         x: e.clientX,
-        y: e.clientY
-      })
-    }
+        y: e.clientY,
+      });
+    };
 
-    const handleMouseEnter = () => setCursorVariant('hover')
-    const handleMouseLeave = () => setCursorVariant('default')
+    const handleMouseEnter = () => setCursorVariant("hover");
+    const handleMouseLeave = () => setCursorVariant("default");
 
     // Add event listener for mouse movement
-    window.addEventListener('mousemove', mouseMove)
+    window.addEventListener("mousemove", mouseMove);
 
     // Add hover effects for elements with cursor-scale class and interactive elements
     const scaleElements = document.querySelectorAll(`
@@ -27,21 +27,21 @@ const AnimatedCursor = () => {
       input, 
       textarea,
       [role="button"]
-    `)
-    
-    scaleElements.forEach(el => {
-      el.addEventListener('mouseenter', handleMouseEnter)
-      el.addEventListener('mouseleave', handleMouseLeave)
-    })
+    `);
+
+    scaleElements.forEach((el) => {
+      el.addEventListener("mouseenter", handleMouseEnter);
+      el.addEventListener("mouseleave", handleMouseLeave);
+    });
 
     return () => {
-      window.removeEventListener('mousemove', mouseMove)
-      scaleElements.forEach(el => {
-        el.removeEventListener('mouseenter', handleMouseEnter)
-        el.removeEventListener('mouseleave', handleMouseLeave)
-      })
-    }
-  }, [])
+      window.removeEventListener("mousemove", mouseMove);
+      scaleElements.forEach((el) => {
+        el.removeEventListener("mouseenter", handleMouseEnter);
+        el.removeEventListener("mouseleave", handleMouseLeave);
+      });
+    };
+  }, []);
 
   const variants = {
     default: {
@@ -53,8 +53,8 @@ const AnimatedCursor = () => {
       x: mousePosition.x - 20,
       y: mousePosition.y - 20,
       scale: 5,
-    }
-  }
+    },
+  };
 
   return (
     <>
@@ -66,7 +66,7 @@ const AnimatedCursor = () => {
         }}
       />
     </>
-  )
-}
+  );
+};
 
-export default AnimatedCursor
+export default AnimatedCursor;
