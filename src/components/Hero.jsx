@@ -71,14 +71,14 @@ const Hero = () => {
 
       <div
         ref={iconRef}
-        className={`pt-8 ${
+        className={`pt-18 ${
           iconInView ? "animate__animated animate__bounce" : "opacity-0"
         }`}
       >
         <a href="#about">
           <FaCircleChevronDown
             className="floating-icon cursor-pointer hover:opacity-60"
-            size={40}
+            size={25}
           />
         </a>
       </div>
